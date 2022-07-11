@@ -14,7 +14,7 @@ interface Country {
 })
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
-
+  data = cc.data;
   constructor() {
     console.log(cc.codes());
     console.log(cc.code('EUR'));
