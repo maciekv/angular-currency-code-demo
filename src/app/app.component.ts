@@ -1,6 +1,6 @@
 import { Component, VERSION } from '@angular/core';
 import * as cc from 'currency-codes';
-interface Country {
+interface CurrencyCode {
   code: string;
   countries: string[];
   currency: string;
@@ -19,7 +19,7 @@ export class AppComponent {
     console.log(cc.codes());
     console.log(cc.code('EUR'));
     console.log(
-      (cc.data as Country[])
+      (cc.data as CurrencyCode[])
         .filter((x) => x.code === 'PLN')
         .map((x) => x.currency)
     );
